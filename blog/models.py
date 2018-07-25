@@ -10,5 +10,5 @@ class Blog(models.Model):
         return self.body[:50]
     def time(self):
         return self.pub_date.strftime('%b %e %Y')
-    #def __str__(self):
-        #return self.title
+    def __str__(self):
+        return self.title
